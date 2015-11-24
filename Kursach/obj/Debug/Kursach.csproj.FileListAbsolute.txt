@@ -1,0 +1,9 @@
+c:\users\swetl\documents\visual studio 2015\Projects\Kursach\Kursach\bin\Debug\Kursach.exe.config
+c:\users\swetl\documents\visual studio 2015\Projects\Kursach\Kursach\bin\Debug\Kursach.exe
+c:\users\swetl\documents\visual studio 2015\Projects\Kursach\Kursach\bin\Debug\Kursach.pdb
+c:\users\swetl\documents\visual studio 2015\Projects\Kursach\Kursach\obj\Debug\Kursach.csprojResolveAssemblyReference.cache
+c:\users\swetl\documents\visual studio 2015\Projects\Kursach\Kursach\obj\Debug\Kursach.Form1.resources
+c:\users\swetl\documents\visual studio 2015\Projects\Kursach\Kursach\obj\Debug\Kursach.Properties.Resources.resources
+c:\users\swetl\documents\visual studio 2015\Projects\Kursach\Kursach\obj\Debug\Kursach.csproj.GenerateResource.Cache
+c:\users\swetl\documents\visual studio 2015\Projects\Kursach\Kursach\obj\Debug\Kursach.exe
+c:\users\swetl\documents\visual studio 2015\Projects\Kursach\Kursach\obj\Debug\Kursach.pdb
