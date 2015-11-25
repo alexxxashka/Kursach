@@ -8,6 +8,7 @@ namespace Kursach
 {
     public class Hardware
     {
+        public int id { set; get; }
         public string Section { set; get; }
         public string Type { set; get; }
         public string Firm { set; get; }
@@ -19,8 +20,9 @@ namespace Kursach
         {
 
         }
-        public Hardware(string newSection = "Не задано", string newType = "Не задано", string newFirm = "Не задано", string newModel = "Не задано", int newPrice = 0, string newComment = "Не задано")
+        public Hardware(int newId, string newSection = "Не задано", string newType = "Не задано", string newFirm = "Не задано", string newModel = "Не задано", int newPrice = 0, string newComment = "Не задано")
         {
+            id = newId;
             Section = newSection;
             Type = newType;
             Firm = newFirm;

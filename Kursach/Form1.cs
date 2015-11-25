@@ -21,11 +21,21 @@ namespace Kursach
         }
         List<Hardware> items = new List<Hardware>();
         List<Hardware> view = new List<Hardware>();
+        BindingSource Source = new BindingSource();        
+
         private void loadItems()
         {
             FileStream db = new FileStream("db.xml", FileMode.Open, FileAccess.Read);
             XmlSerializer xser = new XmlSerializer(typeof(List<Hardware>));
             items = (List<Hardware>)xser.Deserialize(db);
+            db.Close();
+        }
+
+        private void saveItems()
+        {
+            FileStream db = new FileStream("db.xml", FileMode.Create, FileAccess.Write);
+            XmlSerializer xser = new XmlSerializer(typeof(List<Hardware>));
+            xser.Serialize(db, items);
             db.Close();
         }
         
@@ -38,10 +48,9 @@ namespace Kursach
         private void Form1_Load(object sender, EventArgs e)
         {
             view.AddRange(items);
-            foreach (Hardware item in items)
-            {
-                dataGridView1.Rows.Add(item.Section, item.Type, item.Firm, item.Model, item.Price, item.Comment);
-            }
+            Source.DataSource = view;
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = Source;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -53,8 +62,14 @@ namespace Kursach
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows[1].Selected = true; 
-            dataGridView1.CurrentCell = dataGridView1[0, 1];
+            dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
+            label1.Text = view.Count.ToString();
+            int index = 0;
+            foreach (Hardware item in items)
+            {
+                item.id = index++;
+            }
+            saveItems();
         }
     }
 }
