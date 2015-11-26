@@ -29,6 +29,8 @@ namespace Kursach
             XmlSerializer xser = new XmlSerializer(typeof(List<Hardware>));
             items = (List<Hardware>)xser.Deserialize(db);
             db.Close();
+
+            view.AddRange(items);
         }
 
         private void saveItems()
@@ -47,10 +49,11 @@ namespace Kursach
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            view.AddRange(items);
+            
             Source.DataSource = view;
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.DataSource = Source;
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -62,7 +65,12 @@ namespace Kursach
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
+            //items.RemoveAt(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+            //dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);            
+            view.Add(new Hardware(100));
+            Source.ResetBindings(false);
+          //  dataGridView1.DataSource = null;
+          //  dataGridView1.DataSource = Source;
             label1.Text = view.Count.ToString();
             int index = 0;
             foreach (Hardware item in items)
@@ -70,6 +78,11 @@ namespace Kursach
                 item.id = index++;
             }
             saveItems();
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
