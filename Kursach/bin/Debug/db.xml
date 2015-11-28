@@ -20,15 +20,6 @@
   </Hardware>
   <Hardware>
     <id>2</id>
-    <Section>Комплектующие</Section>
-    <Type>Процессор</Type>
-    <Firm>Intel</Firm>
-    <Model>sd12312</Model>
-    <Price>500</Price>
-    <Comment>Очень хороший проц</Comment>
-  </Hardware>
-  <Hardware>
-    <id>3</id>
     <Section>Переферийные устройства</Section>
     <Type>Монитор</Type>
     <Firm>Asus</Firm>
@@ -37,7 +28,7 @@
     <Comment>Жк монитор, 22' диагональ</Comment>
   </Hardware>
   <Hardware>
-    <id>4</id>
+    <id>3</id>
     <Section>Комплектующие</Section>
     <Type>Процессор</Type>
     <Firm>AMD</Firm>
@@ -46,7 +37,7 @@
     <Comment>4-x Ядерный процессор, с кэшем 4-го уровня</Comment>
   </Hardware>
   <Hardware>
-    <id>5</id>
+    <id>4</id>
     <Section>Переферийные устройства</Section>
     <Type>Мышь и клавиатура</Type>
     <Firm>Qilive</Firm>
@@ -55,7 +46,7 @@
     <Comment>Клавиатура с синей подсветкой. Гарантия 2 года</Comment>
   </Hardware>
   <Hardware>
-    <id>6</id>
+    <id>5</id>
     <Section>Комплектующие</Section>
     <Type>Материнская плата</Type>
     <Firm>ASUS</Firm>
@@ -64,7 +55,7 @@
     <Comment>С сокетом 64</Comment>
   </Hardware>
   <Hardware>
-    <id>7</id>
+    <id>6</id>
     <Section>Комплектующие</Section>
     <Type>Материнская плата</Type>
     <Firm>ASRock</Firm>
@@ -73,7 +64,7 @@
     <Comment>FM2+, 2xDDR3-1866 МГц, 1xPCI-Ex16, 4xSATA, аудио 5.1, Micro ATX</Comment>
   </Hardware>
   <Hardware>
-    <id>8</id>
+    <id>7</id>
     <Section>Комплектующие</Section>
     <Type>Материнская плата</Type>
     <Firm>ASUS</Firm>
@@ -82,7 +73,7 @@
     <Comment>AM1, 2xDDR3-1866 МГц, 1xPCI-Ex16, 2xSATA, аудио 7.1, Micro ATX</Comment>
   </Hardware>
   <Hardware>
-    <id>9</id>
+    <id>8</id>
     <Section>Комплектующие</Section>
     <Type>Материнская плата</Type>
     <Firm>ASRock</Firm>
@@ -91,7 +82,7 @@
     <Comment>LGA 1151, 4xDDR4-3866 МГц, 3xPCI-Ex16, 6xSATA, аудио 7.1, Standard ATX</Comment>
   </Hardware>
   <Hardware>
-    <id>10</id>
+    <id>9</id>
     <Section>Комплектующие</Section>
     <Type>Материнская плата</Type>
     <Firm>ASUS</Firm>
@@ -100,7 +91,7 @@
     <Comment>LGA 1150, 2xDDR3-1600 МГц, 1xPCI-Ex16, 6xSATA, аудио 7.1, Micro ATX</Comment>
   </Hardware>
   <Hardware>
-    <id>11</id>
+    <id>10</id>
     <Section>Комплектующие</Section>
     <Type>Процессор</Type>
     <Firm>AMD</Firm>
@@ -109,7 +100,7 @@
     <Comment>FM2, 2x3200 МГц, L2 - 1024 Кб, 2xDDR3-1600 МГц, TDP 65 Вт</Comment>
   </Hardware>
   <Hardware>
-    <id>12</id>
+    <id>11</id>
     <Section>Комплектующие</Section>
     <Type>Процессор</Type>
     <Firm>AMD</Firm>
@@ -118,7 +109,7 @@
     <Comment>AM3+, 8x4400 МГц, L2 - 8192 Кб, L3 - 8192 Кб, 2xDDR3-1866 МГц, TDP 220 Вт</Comment>
   </Hardware>
   <Hardware>
-    <id>13</id>
+    <id>12</id>
     <Section>Комплектующие</Section>
     <Type>Процессор</Type>
     <Firm>Intel</Firm>
@@ -127,21 +118,12 @@
     <Comment>LGA 1150, 2x3700 МГц, L2 - 512 Кб, L3 - 3072 Кб, 2xDDR3-1600 МГц, TDP 54 Вт, Intel HD </Comment>
   </Hardware>
   <Hardware>
-    <id>14</id>
+    <id>13</id>
     <Section>Комплектующие</Section>
     <Type>Процессор</Type>
     <Firm>Intel</Firm>
     <Model>Core i7-5960X OEM</Model>
     <Price>98990</Price>
     <Comment>LGA 2011-3, 8x3000 МГц, L2 - 2048 Кб, L3 - 20480 Кб, 4xDDR4-2133 МГц, TDP 140 Вт</Comment>
-  </Hardware>
-  <Hardware>
-    <id>15</id>
-    <Section>Переферийные устройства</Section>
-    <Type>Мышь и клавиатура</Type>
-    <Firm>11231</Firm>
-    <Model>123123</Model>
-    <Price>3221</Price>
-    <Comment>Лалааыв</Comment>
   </Hardware>
 </ArrayOfHardware>
